@@ -48,14 +48,12 @@ export default function DebateHero() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tight text-gray-900">
-              Master the <span className="text-[#01459f]">Debate</span> round.
+              Master the <span className="text-[#01459f]">Debate</span> ecosystem.
           </h1>
 
           <div className="mt-6 max-w-3xl mx-auto">
             <p className="text-xl text-gray-600 leading-relaxed">
-            Connect with expert coaches who will help you master argumentation, improve your speaking skills, and dominate your next tournament.
-
-
+            AI-powered debate preparation, evidence research, tournament management, and coaching—all in one comprehensive ecosystem.
             </p>
           </div>
 

@@ -194,7 +194,7 @@ const DebateCoachingPage = () => {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              How DebateMatch Works
+              How Clusion Works
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               From first connection to championship success - here's how we transform debate careers
@@ -368,7 +368,7 @@ const DebateCoachingPage = () => {
                 <div className="h-10 w-10 rounded-xl bg-gradient-to-br from-blue-600 to-purple-600 flex items-center justify-center shadow-lg">
                   <span className="text-white font-bold">DM</span>
                 </div>
-                <span className="text-2xl font-black">DebateMatch</span>
+                <span className="text-2xl font-black">Clusion</span>
               </div>
               <p className="text-gray-300 leading-relaxed mb-6 max-w-md">
                 The ultimate debate marketplace connecting students, coaches, and judges. 
@@ -403,7 +403,7 @@ const DebateCoachingPage = () => {
                 <Link href="/terms" className="block text-gray-300 hover:text-white transition-colors">Terms</Link>
                 <Link href="/privacy" className="block text-gray-300 hover:text-white transition-colors">Privacy</Link>
                 <div className="text-gray-300">
-                  <p>support@debatematch.com</p>
+                  <p>support@clusion.com</p>
                   <p>+1 (555) 123-4567</p>
                 </div>
               </div>
@@ -413,7 +413,7 @@ const DebateCoachingPage = () => {
           <div className="border-t border-gray-700 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center">
               <p className="text-gray-400 text-sm">
-                © 2024 DebateMatch. All rights reserved. Built by champions, for champions.
+                © 2024 Clusion. All rights reserved. Built by champions, for champions.
               </p>
               <div className="flex items-center space-x-6 mt-4 md:mt-0">
                 <span className="text-gray-400 text-sm">Made with ❤️ for the debate community</span>

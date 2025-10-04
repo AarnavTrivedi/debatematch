@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 
 export default function DebateNavbar() {
@@ -17,7 +18,7 @@ export default function DebateNavbar() {
   const smoothScrollTo = (elementId: string) => {
     const element = document.getElementById(elementId);
     if (element) {
-      const headerHeight = 80; // Account for fixed header
+      const headerHeight = 64; // Account for fixed header (h-16 = 64px)
       const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
       const offsetPosition = elementPosition - headerHeight;
 
@@ -47,57 +48,49 @@ export default function DebateNavbar() {
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <button onClick={smoothScrollToTop} className="flex items-center gap-3 group">
-            <span className="text-xl font-black tracking-tight">
-              <span className="text-[#01459f]">Debate</span><span className="text-gray-900">match</span>
-            </span>
+          <button onClick={smoothScrollToTop} className="flex items-center group py-2">
+            <Image
+              src="/clusionlogo.png"
+              alt="Clusion"
+              width={150}
+              height={60}
+              className="object-contain mb-4"
+            />
           </button>
 
           <nav className="hidden md:flex items-center gap-8">
-            <Link
-              href="/students"
-              className="text-gray-600 hover:text-blue-500 font-medium transition-colors duration-200"
+            {/* <Link
+              href="/debate-coaching-new"
+              className="text-gray-600 hover:text-[#01459f] font-medium transition-colors duration-200"
             >
-              For Students
+              Debate Coaching
+            </Link> */}
+            <Link
+              href="/blogs"
+              className="text-gray-600 hover:text-[#01459f] font-medium transition-colors duration-200"
+            >
+              Our Mission
             </Link>
             <Link
-              href="/coaches"
-              className="text-gray-600 hover:text-blue-500 font-medium transition-colors duration-200"
+              href="/blogs"
+              className="text-gray-600 hover:text-[#01459f] font-medium transition-colors duration-200"
             >
-              For Coaches
+              Blogs
             </Link>
-            <Link
-              href="/judges"
-              className="text-gray-600 hover:text-blue-500 font-medium transition-colors duration-200"
-            >
-              For Judges
-            </Link>
-            <button
-              onClick={() => smoothScrollTo('how-it-works')}
-              className="text-gray-600 hover:text-blue-500 font-medium transition-colors duration-200"
-            >
-              How It Works
-            </button>
-            <button
-              onClick={() => smoothScrollTo('pricing')}
-              className="text-gray-600 hover:text-blue-500 font-medium transition-colors duration-200"
-            >
-              Pricing
-            </button>
           </nav>
 
           <div className="hidden md:flex items-center gap-4">
             <Link
               href="/login"
-              className="text-gray-600 hover:text-blue-500 font-medium transition-colors duration-200"
+              className="text-gray-600 hover:text-[#01459f] font-medium transition-colors duration-200"
             >
               Login
             </Link>
             <Link
               href="/get-started"
-              className="inline-flex items-center justify-center px-6 py-2.5 text-sm font-bold text-white bg-blue-500 hover:bg-blue-600 rounded-xl transition-colors duration-200"
+              className="inline-flex items-center justify-center px-6 py-2.5 text-sm font-bold text-white bg-[#01459f] hover:bg-blue-700 rounded-xl transition-colors duration-200 shadow-lg hover:shadow-xl"
             >
-              Get Started
+              Start Free
             </Link>
           </div>
           <button
@@ -129,51 +122,34 @@ export default function DebateNavbar() {
           }`}
         >
           <div className="py-4 space-y-4 border-t border-gray-200 bg-white/95 backdrop-blur-sm rounded-b-lg">
-            <button
-              onClick={() => smoothScrollTo('features')}
-              className="block w-full text-left text-gray-600 hover:text-blue-500 font-medium transition-colors duration-200"
-            >
-              Coaching Features
-            </button>
-            <button
-              onClick={() => smoothScrollTo('demo')}
-              className="block w-full text-left text-gray-600 hover:text-blue-500 font-medium transition-colors duration-200"
-            >
-              Live Demo
-            </button>
-            <button
-              onClick={() => smoothScrollTo('testimonials')}
-              className="block w-full text-left text-gray-600 hover:text-blue-500 font-medium transition-colors duration-200"
-            >
-              Success Stories
-            </button>
-            <button
-              onClick={() => smoothScrollTo('pricing')}
-              className="block w-full text-left text-gray-600 hover:text-blue-500 font-medium transition-colors duration-200"
-            >
-              Coaching Plans
-            </button>
-            <Link
-              href="/coaches"
-              className="block text-gray-600 hover:text-blue-500 font-medium transition-colors duration-200"
+            {/* <Link
+              href="/debate-coaching-new"
+              className="block w-full text-left text-gray-600 hover:text-[#01459f] font-medium transition-colors duration-200"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Become a Coach
+              Debate Coaching
+            </Link> */}
+            <Link
+              href="/blogs"
+              className="block w-full text-left text-gray-600 hover:text-[#01459f] font-medium transition-colors duration-200"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Blogs
             </Link>
             <div className="pt-4 border-t border-gray-200 space-y-3 px-4">
               <Link
                 href="/login"
-                className="block text-gray-600 hover:text-blue-500 font-medium transition-colors duration-200"
+                className="block text-gray-600 hover:text-[#01459f] font-medium transition-colors duration-200"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Sign In
+                Login
               </Link>
               <Link
                 href="/get-started"
-                className="block w-full text-center px-6 py-3 text-sm font-bold text-white bg-blue-500 hover:bg-blue-600 rounded-xl transition-colors duration-200"
+                className="block w-full text-center px-6 py-3 text-sm font-bold text-white bg-[#01459f] hover:bg-blue-700 rounded-xl transition-colors duration-200"
                 onClick={() => setMobileMenuOpen(false)}
               >
-                Start Coaching
+                Start Free
               </Link>
             </div>
           </div>

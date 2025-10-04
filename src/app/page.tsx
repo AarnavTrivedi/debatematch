@@ -5,11 +5,9 @@
 import { useEffect } from "react";
 import DebateNavbar from "@/components/DebateMatch/DebateNavbar";
 import DebateHero from "@/components/DebateMatch/DebateHero";
-import CoachMarketplace from "@/components/DebateMatch/CoachMarketplace";
-import SuccessStories from "@/components/DebateMatch/SuccessStories";
-import DebateFAQ from "@/components/DebateMatch/DebateFAQ";
-import Spotlight from "@/components/Marketing/Spotlight";
-import Marquee from "@/components/Marketing/Marquee";
+import EcosystemOverview from "@/components/DebateMatch/EcosystemOverview";
+import SimpleTestimonials from "@/components/DebateMatch/SimpleTestimonials";
+import SimpleCTA from "@/components/DebateMatch/SimpleCTA";
 import Footer from "@/components/Marketing/Footer";
 
 export default function LandingPage() {
@@ -27,12 +25,11 @@ export default function LandingPage() {
 
   return (
     <main className="relative min-h-screen bg-white">
-      
       <DebateNavbar />
       <DebateHero />
-      <CoachMarketplace />
-      <SuccessStories />
-      <DebateFAQ />
+      <EcosystemOverview />
+      <SimpleTestimonials />
+      <SimpleCTA />
       <Footer />
     </main>
   );

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -6,20 +7,24 @@ export default function Footer() {
   return (
     <footer className="relative border-t border-gray-200/50 bg-white/80 backdrop-blur-xl">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mr-4">
           {/* Brand */}
-          <div className="col-span-1 md:col-span-2">
-            <Link href="/" className="flex items-center gap-3 mb-6">
-              <span className="text-2xl font-black text-gray-900 tracking-tight">
-                <span className="text-[#01459f]">Debate</span><span className="text-gray-900">match</span>
-              </span>
-            </Link>
-            <p className="text-gray-600 text-xl leading-relaxed max-w-md mb-10">
-              The home for debate
-            </p>
+            <div className="col-span-1 md:col-span-2">
+              <Link href="/" className="flex items-center gap-3 mb-2 -mt-20">
+                <Image
+                  src="/clusionlogo.png"
+                  alt="Clusion"
+                  width={200}
+                  height={100}
+                  className="object-contain -mb-6 -ml-5"
+                />
+              </Link>
+              <p className="text-gray-600 text-xl leading-relaxed max-w-md mb-8 -mt-8">
+                The debate ecosystem
+              </p>
             <div className="flex items-center gap-4">
               <a
-                href="https://discord.gg/debatematch"
+                href="https://discord.gg/clusion"
                 target="_blank"
                 rel="noreferrer"
                 className="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-gray-500 hover:text-blue-600 transition-all duration-200 hover:scale-[1.05]"
@@ -29,7 +34,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="https://twitter.com/debatematch"
+                href="https://twitter.com/clusion"
                 target="_blank"
                 rel="noreferrer"
                 className="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-gray-500 hover:text-blue-600 transition-all duration-200 hover:scale-[1.05]"
@@ -39,7 +44,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="https://instagram.com/prepsy"
+                href="https://instagram.com/clusion"
                 target="_blank"
                 rel="noreferrer"
                 className="w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center text-gray-500 hover:text-blue-600 transition-all duration-200 hover:scale-[1.05]"
@@ -66,8 +71,8 @@ export default function Footer() {
           <div>
             <h3 className="text-gray-900 font-bold mb-4">Support</h3>
             <ul className="space-y-3">
-              <li><a href="https://discord.gg/debatematch" target="_blank" rel="noreferrer" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">Discord Community</a></li>
-              <li><a href="mailto:support@debatematch.com" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">Contact Us</a></li>
+              <li><a href="https://discord.gg/clusion" target="_blank" rel="noreferrer" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">Discord Community</a></li>
+              <li><a href="mailto:support@clusion.com" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">Contact Us</a></li>
               <li><Link href="/tos" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">Terms of Service</Link></li>
               <li><a href="/privacy" className="text-gray-700 hover:text-blue-600 transition-colors duration-200">Privacy Policy</a></li>
             </ul>
@@ -79,14 +84,14 @@ export default function Footer() {
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-4">
               <span className="text-xl font-black tracking-tight">
-                <span className="text-[#01459f]">Debate</span><span className="text-gray-900">match</span>
+                <span className="text-[#01459f]">Clu</span><span className="text-gray-900">sion</span>
               </span>
               <div className="text-gray-600 text-sm">
-                © {currentYear} DebateMatch. All rights reserved.
+                © {currentYear} Clusion. All rights reserved.
               </div>
             </div>
             <div className="flex items-center gap-6 text-sm">
-              <span className="text-gray-600 font-medium">The home for debate</span>
+              <span className="text-gray-600 font-medium">The debate ecosystem</span>
             </div>
           </div>
         </div> */}

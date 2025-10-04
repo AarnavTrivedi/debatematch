@@ -1,5 +1,5 @@
 -- =====================================================
--- PREPSY MOCK EXAMS DATABASE SCHEMA
+-- CLUSION MOCK EXAMS DATABASE SCHEMA
 -- Production-ready schema for organizing practice tests
 -- =====================================================
 

@@ -23,9 +23,9 @@ import 'katex/dist/katex.min.css';
 const inter = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Prepsy – Dashboard",
+  title: "Clusion – AI-Powered Debate Ecosystem",
   description:
-    "Personalized AP Cram + Self-studying platform",
+    "Comprehensive debate platform with AI research tools, expert coaching, tournament management, and performance analytics. Join 10,000+ debaters using Clusion.",
 };
 
 export default async function RootLayout({
